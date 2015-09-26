@@ -9,7 +9,7 @@ end
 %% Search for the unpadded variables to be scattered
 variable_tree = layer_U.variable_tree;
 nVariables_to_transform = length(layer_banks);
-padding_variables = [];
+padding_variables = struct([]);
 for variable_index = 1:nVariables_to_transform
     bank = layer_banks{variable_index};
     bank_behavior = bank.behavior;
